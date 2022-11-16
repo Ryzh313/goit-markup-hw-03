@@ -1,0 +1,259 @@
+/* Colors-
+     -background
+        -header background: #FFFFFF;
+        -footer background: #2F303A;
+        -primery background: #F5F5F5;
+        -secondary background: #F5F4FA;
+    -text
+        -primery text: #212121;
+        -secondary text: #757575;
+        -hero text: #FFFFFF;
+        -hover text: #2196F3;
+        -logo-blue: #2196F3;
+        -logo-black: #000000;
+*/
+
+:root {
+  --primery-black-color: #212121;
+  --primery-white-color: #ffffff;
+  --secondary-text-color: #757575;
+  --accent-blue-color: #2196f3;
+  --accent-black-color: #000000;
+  --secondary-black-color: #2f303a;
+  --transparency-white-color: #ffffff99;
+  --hover-blue-color: #188ce8;
+  --header-line-color: #ececec;
+  --secondary-white-color: #f5f4fa;
+  --border-line-color: #eeeeee;
+}
+
+/* Загальні стилі */
+body {
+  background-color: var(--primery-white-color);
+  color: var(--primery-black-color);
+
+  font-family: 'roboto', sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.hidden-title {
+  visibility: hidden;
+}
+
+/* Верхня лінія / Футер */
+
+.logo {
+  color: var(--accent-black-color);
+  font-family: 'raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-blue {
+  color: var(--accent-blue-color);
+}
+
+.menu-nav .link {
+  color: var(--primery-black-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.menu-nav .link.current {
+  color: var(--accent-blue-color);
+}
+
+.menu .link {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--secondary-black-color);
+}
+
+.footer .logo {
+  color: var(--primery-white-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-blue-color);
+  text-decoration: none;
+}
+
+.link-map {
+  color: var(--primery-white-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.link-map:hover,
+.link-map:focus {
+  color: var(--accent-blue-color);
+}
+
+.address-link {
+  color: var(--primery-white-color);
+
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-blue-color);
+}
+
+/* CSS index.html */
+
+/* Герой */
+.hero {
+  background-color: var(--secondary-black-color);
+}
+
+.hero-title {
+  color: var(--primery-white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--primery-white-color);
+  background-color: var(--accent-blue-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--hover-blue-color);
+}
+
+/* Особливості */
+
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.features-post {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.post {
+  color: var(--secondary-text-color);
+}
+
+/* Чим ми займаємось */
+
+.images-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Наша команда */
+.team {
+  background-color: var(--secondary-white-color);
+}
+
+.team-title {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.card {
+  background-color: var(--primery-white-color);
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.card-post {
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* CSS portfolio.html */
+
+/* Портфоліо */
+
+.project {
+  background-color: var(--primery-white-color);
+}
+
+.project-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-post {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+/* Фільтри */
+
+.filter-button {
+  background-color: var(--secondary-white-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-blue-color);
+  color: var(--primery-white-color);
+}
