@@ -203,6 +203,10 @@ body {
   background-color: var(--secondary-black-color);
 }
 
+.container-hero {
+  dispay: flex;
+}
+
 .hero-title {
   width: 696px;
   margin-left: auto;
@@ -221,8 +225,12 @@ body {
 .hero-button {
   width: 216px;
   height: 50px;
-  display: flex;
-  align-items: center;
+  margin: 0 auto;
+  display: block;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
 
   color: var(--primery-white-color);
   background-color: var(--accent-blue-color);
@@ -270,7 +278,7 @@ body {
 
 /*========== Чим ми займаємось ========== */
 .images {
-  border-top: 0;
+  padding-top: 0;
 }
 
 .images-title {
