@@ -37,15 +37,15 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   background-color: var(--primery-white-color);
   color: var(--primery-black-color);
 
   font-family: 'roboto', sans-serif;
-}
-
-ul {
-  list-style: none;
 }
 
 .container {
@@ -77,12 +77,20 @@ ul {
 /*========== Загальні стилі =========== */
 
 /*========== Верхня лінія / Футер ========== */
-.header {
+
+.nav-container {
   display: flex;
 }
 
-.nav-container {
-  align-items: center;
+.nav {
+  display: flex;
+}
+
+.logo-nav {
+  margin-right: 93px;
+}
+
+.menu-nav-item {
 }
 
 .logo {
@@ -99,18 +107,18 @@ ul {
   color: var(--accent-blue-color);
 }
 
-.menu-nav .link {
+.link-menu-nav {
   color: var(--primery-black-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.menu-nav .link.current {
+.current {
   color: var(--accent-blue-color);
 }
 
-.menu .link {
+.link-menu {
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 14px;
