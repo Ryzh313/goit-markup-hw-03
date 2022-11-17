@@ -74,15 +74,34 @@ body {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.link {
+  text-decoration: none;
+}
 /*========== Загальні стилі =========== */
 
 /*========== Верхня лінія / Футер ========== */
 
 .nav-container {
   display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.header {
+  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .nav {
+  display: flex;
+}
+
+.menu-nav {
+  display: flex;
+}
+
+.menu {
   display: flex;
 }
 
@@ -90,7 +109,8 @@ body {
   margin-right: 93px;
 }
 
-.menu-nav-item {
+.menu-nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .logo {
@@ -108,6 +128,9 @@ body {
 }
 
 .link-menu-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primery-black-color);
   font-weight: 500;
   font-size: 14px;
@@ -126,8 +149,8 @@ body {
   letter-spacing: 0.02em;
 }
 
-.link {
-  text-decoration: none;
+.menu-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .footer {
