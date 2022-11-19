@@ -396,7 +396,20 @@ body {
 }
 
 .project {
+  width: 370px;
   background-color: var(--primery-white-color);
+}
+
+.container-project {
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px 24px;
+
+  background: var(--primery-white-color);
+  border-bottom: 1px solid var(--border-line-color);
+  border-left: 1px solid var(--border-line-color);
+  border-right: 1px solid var(--border-line-color);
 }
 
 .project-title {
